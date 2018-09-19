@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>QQVoice</title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			var hscroll, mscroll;
+			var favlstv, etcv, hv, mv;
+			var flsto = {},
+				dlsto = {};
+			var ff, cachepath;
+			var playcache, iplayer = null;
+			var cfgpage = null;
+			var cfg = {
+				repath: "//sdcard/tencent/MobileQQ", //确定选择后跳转的路径
+				needchpath: true, //确定选择后是否跳转路径
+				startchpath: true, //启动时跳转到第一条收藏
+				cancelchpath: true, //确定/取消选择后跳转到第一条收藏
+				needplay: true, //选中时是否需要试听
+				mindelay: 200,
+				namechk: { //过滤规则
+					//f: /\.(slk|amr)/,
+					f: "\.(slk|amr|mp3|ogg|wav|m4a|flac|aac|mp4|mkv|mka|h264)$", //选择前文件后缀
+					tf: "\.(slk)$", //选择后文件后缀
+					d: ".", //选择前目录后缀
+					td: "^[\\dpt]+$" //选择后目录后缀
+				},
+				hidefile: true, //不显示隐藏文件(^.*$)
+				sortrule: "zh-CN", //排序方法
+				regexopt: "i", //正则过滤规则：i不分大小写，g全局，m多行匹配
+				needcnv: 1 //是否转码,0=不转码,1=后缀不同则转码,2=强制转码
+			};
+			var scrollth = {
+				ing: false,
+				delay: cfg.mindelay * 2
+			};
+			var timeformat = "yyyy-MM-dd hh:mm:ss";
+			mui.init({
+				beforeback: function() {
+					var offcmenu = mui('.mui-off-canvas-wrap').offCanvas();
+					if(offcmenu.isShown()) {
+						offcmenu.close();
+						return false;
+					} else {
+						if(!hv.canBack) return true;
+						pdir();
+						return false;
+					}
+				},
+				gestureConfig: {
+					tap: true, //默认为true
+					doubletap: false, //默认为false
+					longtap: false, //默认为false
+					swipe: true, //默认为true
+					drag: true, //默认为true
+					hold: true, //默认为false，不监听
+					release: false //默认为false，不监听
+				}
+			});
+			mui.plusReady(function() {
+				plus.io.requestFileSystem(plus.io.PRIVATE_DOC, function(fs) {
+					cachepath = fs.root.fullPath;
+					playcache = cachepath + "playcache.wav";
+				});
+				mui.preload({
+					id: "config.html",
+					url: "config.html",
+					extras: {
+						mw: plus.webview.currentWebview(),
+						cfg: cfg
+					}
+				});
+				cfgpage = plus.webview.getWebviewById("config.html");
+				hscroll = mui("#menuScrollWrap").scroll(); //菜单滚动条
+				mscroll = mui("#contentScrollWrap").scroll(); //主页滚动条
+				document.getElementById("contentScrollWrap").addEventListener("scroll", function() {
+					if(scrollth.ing) return;
+					scrollth.ing = true;
+					setTimeout(function() {
+						scrollth.ing = false;
+					}, scrollth.delay);
+					setTimeout(scrollupdate, scrollth.delay);
+				});
+				vueload();
+				//window.addEventListener("delLastFav", favlstv.dellast);
+				window.addEventListener("setcfg", updatecfg);
+				var cfgsave = plus.storage.getItem("cfg");
+				if(cfgsave)
+					cfg = JSON.parse(cfgsave);
+				var flsts = plus.storage.getItem("fav"); //读取存储的列表
+				var nfav = [];
+				if(flsts)
+					nfav = JSON.parse(flsts);
+				if(nfav.length != 0) {
+					updateFavLst(nfav);
+					if(cfg.startchpath)
+						chPath(getfullpath(nfav[0])); //转到第一个收藏
+				}
+				updateFileLst();
+				ff = plus.android.newObject('top.kuriko.File'); //初始化原生类对象
+			});
+
+			function vueload() {
+				//收藏记录&菜单
+				favlstv = new Vue({
+					el: "#favLstWrap",
+					data: {
+						favlst: {}, //收藏列表vue数据
+						nfavlst: [], //收藏列表简易数据
+					},
+					computed: {
+						favlstc: function() { //收藏项总数
+							return this.nfavlst.length;
+						}
+					},
+					methods: {
+						chnow: function() { //更新收藏列表项状态
+							var s;
+							for(var i in this.favlst) {
+								s = getfullpath(this.favlst[i]);
+								if(s == hv.nowPath || s == hv.nowPath + "//")
+									this.favlst[i].now = true;
+								else this.favlst[i].now = false;
+							}
+							hv.chkfav();
+						},
+						favtap: function(i) { //切换到收藏的路径
+							if(i.now) return;
+							chPath(getfullpath(i));
+							this.chnow();
+							mui("#offCanvasSide").offCanvas("close");
+						},
+						dellast: function() { //删除最后一项
+							var nfav = cpobj(favlstv.nfavlst);
+							nfav.splice(nfav.length - 1, 1);
+							updateFavLst(nfav);
+							plus.storage.setItem("fav", JSON.stringify(nfav));
+						}
+					},
+					directives: {}
+				});
+
+				//因MUI与VUE冲突故分解vue实例
+
+				//菜单的其他选项
+
+				etcv = new Vue({
+					el: "#ietc",
+				});
+
+				//接管标题栏
+
+				hv = new Vue({
+					el: "#hwrap",
+					data: {
+						nowPath: "//sdcard", //当前目录
+						fav: false, //已收藏
+						canBack: false, //可以返回上一级目录
+						rring: false, //处理中
+						seledfile: "" //替换用文件路径
+					},
+					methods: {
+						rrTap: function() { //刷新主页面文件/目录列表
+							this.rring = true;
+							favlstv.chnow();
+							updateFileLst();
+							mui.toast("已刷新");
+						},
+						chkfav: function() { //检查是否已收藏当前路径
+							this.fav = false;
+							var s;
+							for(var i in favlstv.favlst) {
+								s = getfullpath(favlstv.favlst[i]);
+								if(s == this.nowPath || s == this.nowPath + "//") {
+									this.fav = true;
+									break;
+								}
+							}
+						},
+						cancelsel: function() {
+							mv.selfile = "";
+							hv.seledfile = "";
+							if(cfg.cancelchpath) {
+								if(favlstv.nfavlst.length > 0)
+									chPath(getfullpath(favlstv.nfavlst[0]));
+								else chPath("//sdcard");
+							}
+						}
+					}
+				});
+
+				//接管主页面
+				mv = new Vue({
+					el: "#fLstWrap",
+					data: {
+						flst: {}, //子文件列表
+						dlst: {}, //子目录列表
+						update: false, //正在更新
+						marquee: {
+							speed: 5000, //滚动100%的时间(ms)
+							delay: 1500, //动画开始前等待时间(ms)
+							lst: [],
+							id: 0, //计时器ID
+							el: null //动画的目标元素
+						},
+						selfile: "" //点击的文件
+					},
+					computed: {
+						flstc: function() { //子对象总数
+							return Object.keys(this.flst).length;
+						},
+						dlstc: function() { //子对象总数
+							return Object.keys(this.dlst).length;
+						},
+						hasc: function() { //子对象总数
+							return this.flstc + this.dlstc;
+						}
+					},
+					methods: {
+						tapfile: function(i) { //选择文件
+						    hv.rring = true;
+							scrollupdate();
+							var el = document.querySelector("#" + i.id + " .marquee");
+							if(mv.marquee.el != null) {
+								if(getfullpath(i) == mv.selfile) {
+									if(hv.seledfile != "") { //已选择，替换文件
+										refile(getfullpath(i), hv.seledfile);
+										return;
+									} else {
+										hv.seledfile = getfullpath(i);
+										chPath(cfg.repath); //未选择，确定选择文件
+										return;
+									}
+								}
+								mv.marquee.el.removeAttribute("style");
+								mv.marquee.el.parentNode.style.textOverflow = "ellipsis";
+							}
+							mv.selfile = getfullpath(i);
+							el.style.color = "#007AFF";
+							mv.marqueeisback = true;
+							mv.marquee.el = el;
+							var wrw = document.getElementById("fLstWrap").offsetWidth;
+							var d = el.offsetWidth - wrw + 35;
+							window.clearInterval(mv.marquee.id);
+							if(d > 0) { //超出范围则开启滚动动画效果
+								el.parentNode.removeAttribute("style");
+								var x = (d / wrw * mv.marquee.speed + '').split('.')[0];
+								if(x < mv.marquee.delay) x = mv.marquee.delay;
+								el.style.transition = "all " + x + "ms linear 0s";
+								el.style.webkitTransition = "all " + x + "ms linear 0s";
+								el.style.left = "0px";
+								setTimeout(function() {
+									el.style.left = 0 - d + 'px';
+								}, cfg.mindelay);
+								mv.marquee.id = setInterval(mv.marqueeAnime(el, d), x * 1 + mv.marquee.delay);
+							}
+							if(cfg.needplay) { //试听
+								if(iplayer != null) {
+									iplayer.stop();
+								}
+								setTimeout(function(){
+									plus.android.invoke(ff, 'preplaydec', getfullpath(i), playcache);
+									iplayer = plus.audio.createPlayer(playcache);
+									iplayer.play();
+									hv.rring = false;
+								}, 10);
+							} else hv.rring = false;
+						},
+						marqueeAnime: function(el, d) { //滚动动画计时器
+							return function() {
+								if(mv.marqueeisback) {
+									el.style.left = 0 + 'px';
+									mv.marqueeisback = false;
+								} else {
+									el.style.left = 0 - d + 'px';
+									mv.marqueeisback = true;
+								}
+							};
+						}
+					}
+				});
+			}
+
+			function updateFavLst(nfavlst) { //更新收藏列表
+				var favlsto = {};
+				for(var i = 0; i < nfavlst.length; i++) {
+					favlsto['fav' + i] = nfavlst[i];
+					favlsto['fav' + i].now = false;
+					favlsto['fav' + i].hov = false;
+				}
+				favlstv.favlst = Object.assign({}, favlsto);
+				favlstv.nfavlst = nfavlst;
+				favlstv.chnow();
+			}
+
+			function chfav() { //切换收藏状态
+				if(hv.fav) delfav(hv.nowPath); //取消收藏
+				else addfav(hv.nowPath); //收藏目录
+			}
+
+			function addfav(path) {
+				var nfav = cpobj(favlstv.nfavlst);
+				nfav.push(splitpath(path));
+				updateFavLst(nfav);
+				plus.storage.setItem("fav", JSON.stringify(nfav));
+			}
+
+			function delfav(path) {
+				var nfav = cpobj(favlstv.nfavlst);
+				var s;
+				for(var i = 0; i < nfav.length; i++) {
+					s = getfullpath(nfav[i]);
+					if(s == path || s == path + "//")
+						nfav.splice(i, 1);
+				}
+				updateFavLst(nfav);
+				plus.storage.setItem("fav", JSON.stringify(nfav));
+			}
+
+			function updateFileLst() { //更新主页面文件/目录列表
+				if(hv.nowPath == "")
+					return;
+				hv.rring = true;
+				if(hv.nowPath == "/")
+					hv.canBack = false;
+				else hv.canBack = true;
+				plus.io.resolveLocalFileSystemURL(hv.nowPath + '/', function(dfs) {
+					var dr = dfs.createReader();
+					dr.readEntries(function(fs) {
+						var i;
+						dlsto = {};
+						flsto = {};
+						var cff = new RegExp(cfg.namechk.f, cfg.regexopt);
+						var cdf = new RegExp(cfg.namechk.d, cfg.regexopt);
+						if(hv.seledfile != "") {
+							cff = new RegExp(cfg.namechk.tf, cfg.regexopt);
+							cdf = new RegExp(cfg.namechk.td, cfg.regexopt);
+						}
+						for(i = 0; i < fs.length; i++) {
+							if(cfg.hidefile && /^\./.test(fs[i].name))
+								continue;
+							if(fs[i].isFile) {
+								if(cff.test(fs[i].name)) {
+									flsto['f' + i] = {
+										name: fs[i].name,
+										time: "",
+										size: "",
+										ext: chkext(fs[i].name),
+										id: 'f' + i
+									};
+								}
+							} else {
+								if(cdf.test(fs[i].name)) {
+									dlsto['f' + i] = {
+										name: fs[i].name,
+										id: 'f' + i
+									};
+								}
+							}
+						}
+						updatevv();
+						mscroll.reLayout();
+						mscroll.scrollTo(0, 0, 500);
+						setTimeout(scrollupdate, scrollth.delay);
+						hv.rring = false;
+					});
+				});
+			}
+
+			function updatevv() { //更新主页面vue数据
+				mv.update = true;
+				mv.dlst = Object.assign({}, sortf(dlsto, "name", "f", "id"));
+				mv.flst = Object.assign({}, sortf(flsto, "name", "f", "id"));
+				mv.$nextTick(function() {
+					mv.update = false;
+				});
+			}
+
+			function chPath(path) { //切换目录
+				hv.rring = true;
+				setTimeout(function() {
+					hv.nowPath = path;
+					if(/^\/+$/.test(path))
+						hv.nowPath = "/";
+					favlstv.chnow();
+					mv.selfile = "";
+					if(mv.marquee.el != null) {
+						mv.marquee.el.removeAttribute("style");
+						mv.marquee.el.parentNode.style.textOverflow = "ellipsis";
+					}
+					if(iplayer != null) {
+						iplayer.stop();
+					}
+					updateFileLst();
+				}, 1);
+			}
+
+			function pdir() { //上一级目录
+				chPath(splitpath(hv.nowPath).path);
+			}
+
+			function scrollupdate() { //读取可视范围内的列表项信息
+				if(mv.update) {
+					setTimeout(scrollupdate, scrollth.delay);
+					return;
+				}
+				var t, m, i = 0;
+				for(var fi in mv.flst) {
+					t = document.getElementById(fi).getBoundingClientRect();
+					m = document.getElementById("contentScrollWrap");
+					if(t.bottom > m.offsetTop && t.top < m.offsetTop + m.offsetHeight) {
+						getFileinfo(fi, getfullpath(mv.flst[fi]), cfg.mindelay * ++i);
+					}
+				}
+			}
+
+			function getFileinfo(id, fullpath, delay) { //读取meta信息（异步）
+				setTimeout(function() {
+					plus.io.resolveLocalFileSystemURL(fullpath, function(fs) {
+						fs.getMetadata(function(meta) {
+							if(splitpath(fullpath).path == hv.nowPath) {
+								mv.flst[id].time = tformat(meta.modificationTime, timeformat);
+								mv.flst[id].size = fsizef(meta.size);
+							}
+						});
+					});
+				}, delay);
+			}
+
+			function cnvAudio(source, target) {
+				plus.android.invoke(ff, 'encSilk', source, target, cachepath);
+				mui.toast("转码&替换完成");
+			}
+
+			function replacefile(source, target) {
+				plus.android.invoke(ff, 'cpfile', source, target);
+				mui.toast("替换成功");
+			}
+
+			function refile(oldf, newf) {
+				try {
+					switch(cfg.needcnv) {
+						case 2:
+							cnvAudio(newf, oldf);
+							break;
+						case 1:
+							if(getext(newf) == getext(oldf))
+								replacefile(newf, oldf);
+							else cnvAudio(newf, oldf);
+							break;
+						default:
+							replacefile(newf, oldf);
+					}
+					hv.cancelsel();
+				} catch(e) {
+					mui.toast("替换失败：" + e.message);
+				}
+				/*
+				plus.io.resolveLocalFileSystemURL(oldf, function(ofs) { //打开旧文件
+					ofs.remove(function() { //删除旧文件
+						var oldff = splitpath(oldf);
+						plus.io.resolveLocalFileSystemURL(oldff.path + '/', function(ods) { //打开旧目录
+							ods.getFile(oldff.name, {
+								create: true
+							}, function(odf) { //创建目标
+								plus.io.resolveLocalFileSystemURL(newf, function(nfs) { //打开新文件
+									nfs.file(function(nfd) { //获取新文件数据对象
+										var fr = new plus.io.FileReader();
+										fr.onload = function(e) { //读取新文件内容
+											odf.createWriter(function(fw) {
+												fw.onwrite = function() {
+													window.location = "kuriko://base64?path=" + oldf;
+													setTimeout(function() {
+														mui.toast("替换成功");
+													}, cfg.mindelay * 4);
+													hv.cancelsel();
+												};
+												fw.onerror = function() {
+													mui.toast("替换失败：写入文件失败");
+												}
+												fw.write(e.target.result.substr(e.target.result.indexOf(",") + 1));
+											});
+										}
+										fr.readAsDataURL(nfd, "UTF-8");
+										nfd.close();
+									});
+								});
+							}, function() {
+								mui.toast("替换失败：创建目标文件失败");
+							});
+						});
+					}, function() {
+						mui.toast("替换失败：删除目标文件失败");
+					});
+				});//*/
+			}
+
+			function getappinfo(appid) {
+				if(typeof appid == undefined)
+					appid = plus.runtime.appid
+				plus.runtime.getProperty(appid, function(wgtinfo) {
+					//appid属性
+					var wgtStr = "appid:" + wgtinfo.appid;
+					//version属性
+					wgtStr += "<br/>version:" + wgtinfo.version;
+					//name属性
+					wgtStr += "<br/>name:" + wgtinfo.name;
+					//description属性
+					wgtStr += "<br/>description:" + wgtinfo.description;
+					//author属性
+					wgtStr += "<br/>author:" + wgtinfo.author;
+					//email属性
+					wgtStr += "<br/>email:" + wgtinfo.email;
+					//licence属性
+					wgtStr += "<br/>license:" + wgtinfo.license;
+					//licensehref属性
+					wgtStr += "<br/>licensehref:" + wgtinfo.licensehref;
+					//features 属性
+					wgtStr += "<br/>features:" + wgtinfo.features;
+					console.log(wgtStr);
+				});
+			}
+
+			function sortf(obj, sortkey, prekey, newkey) {
+				var oldarr = [];
+				for(var i in obj) {
+					oldarr.push(obj[i]);
+				}
+				var newarr = cpobj(oldarr);
+				newarr.sort(sortby(sortkey));
+				if(JSON.stringify(newarr) == JSON.stringify(oldarr))
+					return obj;
+				var newobj = {};
+				for(var i in newarr) {
+					newobj[prekey + i] = newarr[i];
+					newobj[prekey + i][newkey] = prekey + i;
+				}
+				return newobj;
+			}
+
+			function getfullpath(i) { //获取完整路径
+				if(i.path)
+					return i.path + '/' + i.name;
+				return hv.nowPath + '/' + i.name;
+			}
+
+			function splitpath(path) { //分割父路径
+				if(/^\/+$/.test(path)) return {
+					path: "/",
+					name: "/"
+				};
+				var p = JSON.parse(path.replace(/^(.*)\/(.*?)$/, '{"path":"$1","name":"$2"}'));
+				if(p.path == "") p.path = "/";
+				return p;
+			}
+
+			function chkext(filename) { //检查扩展名
+				var ext = getext(filename);
+				if(new RegExp(cfg.namechk.f, cfg.regexopt).test(ext)) return ext;
+				return "";
+			}
+
+			function cpobj(obj) {
+				return JSON.parse(JSON.stringify(obj));
+			}
+
+			function getext(filename) { //获取扩展名
+				return filename.replace(/^.*\.(.*?)$/, ".$1");
+			}
+
+			function sortby(key) {
+				return function(a, b) {
+					var val1 = a[key];
+					var val2 = b[key];
+					return val1.localeCompare(val2, cfg.sortrule);
+				}
+			}
+
+			function fsizef(s) { //格式化文件体积
+				if(s > 1000000000) return(s / 10737418.24 + '').split('.')[0] / 100 + 'G';
+				else if(s > 1000000) return(s / 10485.76 + '').split('.')[0] / 100 + 'M';
+				else if(s > 1000) return(s / 10.24 + '').split('.')[0] / 100 + 'K';
+				else return s + 'B';
+			}
+
+			function tformat(t, fmt) { //author: meizz; 格式化时间
+				var o = {
+					"M+": t.getMonth() + 1, //月份
+					"d+": t.getDate(), //日
+					"h+": t.getHours(), //小时
+					"m+": t.getMinutes(), //分
+					"s+": t.getSeconds(), //秒
+					"q+": Math.floor((t.getMonth() + 3) / 3), //季度
+					"S": t.getMilliseconds() //毫秒
+				};
+				if(/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (t.getFullYear() + "").substr(4 - RegExp.$1.length));
+				for(var k in o)
+					if(new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				return fmt;
+			}
+
+			function updatecfg(e) {
+				cfg = e.detail.cfg;
+				plus.storage.setItem("cfg", JSON.stringify(cfg));
+			}
+
+			function showcfg() {
+				mui.fire(cfgpage, "setcfg", {
+					cfg: cfg
+				});
+				cfgpage.show();
+			}
+
+			function openpage(id) { //打开内部页面
+				mui.openWindow({
+					id: id,
+					show: {
+						aniShow: "slide-in-bottom"
+					},
+					extras: {
+						cfg: cfg
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+				mui.fire(plus.webview.getWebviewById(id), "setcfg", {
+					cfg: cfg
+				});
+			}
+
+			function openlink(i) { //打开外部链接
+				console.log(i);
+				plus.runtime.openURL(i);
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- 主界面不动、菜单移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div id="favLstTi" class="lstTi">收藏的目录</div>
+				<div id="menuScrollWrap" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<ul id="favLstWrap" class="mui-table-view">
+							<li v-if="favlstc==0" class="nodata">无数据</li>
+							<li v-for="i in favlst" :id="i.id" class="mui-table-view-cell">
+								<!-- <a class="mui-icon mui-icon-closeempty delfav"></a> -->
+								<a class="mui-navigate-right" :class="i.now?'now':''" @tap="favtap(i)">
+									<div>{{i.name}}</div><span>{{i.path}}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="ietc">
+					<div class="iset mui-table-view-cell" @tap="openpage('config.html');">设置</div>
+					<div class="ihp mui-table-view-cell" @tap="openlink('https://kuriko.top/')">作者HP</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<div>
+					<header id="hwrap" class="mui-bar mui-bar-nav">
+						<div class="procmask" :class="rring?'ing':''" style="top: 50px;">
+							<div class="icon-loading"></div>
+							<div class="mask" style="height: 1080px;"></div>
+						</div>
+						<div class="toolbar">
+							<a id="menuBtn" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+							<h1 class="mui-title">替换QQ语音</h1>
+							<a id="reBtn" class="mui-icon mui-icon-refreshempty" :class="rring?'ing':''" @tap="rrTap();"></a>
+						</div>
+						<div class="lstTi tsall-slow line-h-after-bottom" :class="[nowPath?'mini':'',seledfile!=''?'seled':'']" @tap="hv.cancelsel();">
+							<div class="lstPath rtl ellipsis tsall-slow" v-cloak>{{nowPath}}</div>
+						</div>
+						<div v-if="canBack" class="mui-table-view-cell pdir" @tap="pdir();" v-cloak>
+							<div class="mui-icon mui-icon-undo"></div>上一级目录
+						</div>
+						<div class="mui-table-view-cell favthis" :class="[fav?'fav':'', canBack?'canback':'']" @tap="chfav();"></div>
+					</header>
+					<div id="contentScrollWrap" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 主界面具体展示内容 -->
+							<ul id="fLstWrap" class="mui-table-view">
+								<li v-if="hasc==0" class="nodata">无数据</li>
+								<li v-for="i in dlst" :id="i.id" class="mui-table-view-cell ellipsis ds" @tap="chPath(hv.nowPath+'/'+i.name);" v-cloak>
+									<span class="dname">[{{i.name}}]</span>
+								</li>
+								<li v-for="i in flst" :id="i.id" class="mui-table-view-cell fs" @tap="mv.tapfile(i);" v-cloak>
+									<div class="fname" style="text-overflow: ellipsis">
+										<div :id="'m'+i.id" class="marquee">{{i.name}}</div>
+									</div>
+									<div class="fetc">
+										<div class="ftime tsall" :class="i.time==''?'':'has'">{{i.time}}</div>
+										<div class="fsize tsall" :class="i.size==''?'':'has'">{{i.size}}</div>
+										<div class="fext ellipsis" :class="i.ext==''?'':'has'">{{i.ext}}</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<audio id="iplayer" style="height: 0;"></audio>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

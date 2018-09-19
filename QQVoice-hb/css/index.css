@@ -1,0 +1,286 @@
+#favLstTi {
+	position: absolute;
+	font-size: 24px;
+	color: white;
+	padding-bottom: 10px;
+	z-index: 10;
+	background: #333;
+}
+
+#favLstTi:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #999;
+}
+
+#ietc {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 10;
+	background: #333;
+}
+
+#ietc div {
+	float: right;
+	width: 50%;
+	color: #eee;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+	border-top: #999 solid 1px;
+}
+
+#ietc div:after {
+	height: 0;
+}
+
+#ietc div.mui-active {
+	color: #333;
+	background: #eee;
+}
+
+.ihp {
+	border-right: #999 solid 1px;
+}
+
+#reBtn,
+#menuBtn {
+	position: absolute;
+	padding: 8px;
+}
+
+#menuBtn {
+	top: 4px;
+	left: 14px;
+}
+
+#reBtn {
+	font-size: 34px;
+	right: 8px;
+}
+
+#reBtn.ing {
+	opacity: .3;
+	-webkit-animation: roing 1.2s linear infinite;
+}
+
+#hwrap .toolbar {
+	height: 50px;
+	box-shadow: 0 1px 6px #ccc;
+	-webkit-box-shadow: 0 1px 6px #ccc;
+}
+
+#hwrap .toolbar .mui-title {
+	line-height: 50px;
+	font-size: 20px;
+}
+
+#hwrap {
+	background: white;
+	padding: 0;
+	height: 156px;
+}
+
+#hwrap .lstTi {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	font-size: 26px;
+	padding-top: 20px;
+	height: 56px;
+}
+
+#hwrap .lstTi:before {
+	content: "双击选择语音文件";
+}
+
+#hwrap .lstTi.seled:before {
+	content: "点此取消选择";
+}
+
+#hwrap .lstTi:after {
+	bottom: 50px;
+}
+
+#hwrap .lstTi.mini {
+	font-size: 20px;
+	padding-top: 12px;
+}
+
+#hwrap .lstPath {
+	text-align: center;
+	font-size: 12px;
+	opacity: 0;
+	margin: 8px 20px 0;
+}
+
+#hwrap .lstTi.mini .lstPath {
+	margin-top: 0;
+	opacity: 1;
+}
+
+#hwrap .pdir div {
+	margin: 0;
+	padding: 0;
+}
+
+#hwrap .pdir,
+#hwrap .favthis {
+	line-height: 0;
+	text-align: center;
+	font-size: 17px;
+	height: 50px;
+}
+
+#hwrap .pdir.mui-active,
+#hwrap .favthis.mui-active {
+	background: #6d8;
+}
+
+#hwrap .favthis {
+	border-left: #ddd solid 1px;
+	padding: 24px;
+	width: 100%;
+}
+
+#hwrap .favthis:before {
+	content: "收藏目录";
+}
+
+#hwrap .favthis.fav:before {
+	content: "取消收藏";
+}
+
+#hwrap .favthis:after {
+	height: 1px;
+}
+
+#hwrap .pdir,
+#hwrap .favthis.canback {
+	display: inline-block;
+	width: 50%;
+}
+
+#hwrap .favthis.canback {
+	margin-left: -5px;
+}
+
+#menuScrollWrap {
+	margin: 80px 0 66px;
+}
+
+#menuScrollWrap .mui-scrollbar-vertical {
+	width: 2px;
+}
+
+#menuScrollWrap .mui-scrollbar-indicator {
+	border: none;
+	background: rgba(255, 255, 255, .4);
+}
+
+#favLstWrap {
+	color: #eee;
+	background-color: #333;
+}
+
+#favLstWrap .mui-table-view-cell {
+	padding: 10px 15px 7px;
+}
+
+#favLstWrap .mui-table-view-cell .now,
+#favLstWrap .mui-table-view-cell .mui-active {
+	background: white;
+	color: #333;
+}
+
+#favLstWrap .mui-table-view-cell .now:after {
+	color: #000 !important;
+}
+
+#favLstWrap .mui-table-view-cell div {
+	font-size: 22px;
+	display: block;
+}
+
+#favLstWrap .mui-table-view-cell span {
+	font-size: 13px;
+}
+
+#contentScrollWrap {
+	margin-top: 156px;
+	padding-top: 0;
+}
+
+#fLstWrap {
+	opacity: 1;
+}
+
+#fLstWrap .mui-table-view-cell {
+	margin: 0;
+	height: 50px;
+	padding: 15px;
+}
+
+#fLstWrap .ds {
+	line-height: 20px;
+	font-size: 20px;
+}
+
+#fLstWrap .fs {
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+
+#fLstWrap .fs .fname {
+	overflow: hidden;
+}
+
+#fLstWrap .fs .fetc {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#fLstWrap .fs .fetc .ftime,
+#fLstWrap .fs .fetc .fsize {
+	margin-top: 4px;
+	opacity: 1;
+}
+
+#fLstWrap .fs .fetc .ftime {
+	width: 122px;
+	float: left;
+}
+
+#fLstWrap .fs .fetc .fsize {
+	width: 40px;
+	float: left;
+	text-align: right;
+}
+
+#fLstWrap .fs .fetc .has {
+	margin-top: 0;
+	opacity: 1;
+}
+
+#fLstWrap .fs .fetc .fext {
+	max-width: 45%;
+	text-align: right;
+	float: right;
+	line-height: 0;
+	height: 16px;
+	padding: 6px 2px 2px;
+	border-radius: 5px;
+}
+
+#fLstWrap .fs .fetc .fext.has {
+	border: #4CD964 solid 1px;
+}
+
+#fLstWrap .mui-table-view-cell.mui-active {
+	background: #adf;
+}

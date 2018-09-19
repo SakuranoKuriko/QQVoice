@@ -1,0 +1,4 @@
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/armeabi-v7a/CMakeFiles/silkcodec.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/armeabi-v7a/CMakeFiles/ffmpegcmd.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/armeabi-v7a/CMakeFiles/rebuild_cache.dir

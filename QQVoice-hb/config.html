@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/config.css" />
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				beforeback: function() {
+					return updatecfg();
+				}
+			});
+			var self, mw;
+			var cmv;
+			var cmscroll;
+			mui.plusReady(function() {
+				cmscroll = mui("#mw").scroll(); //滚动条
+				self = plus.webview.currentWebview();
+				mw = plus.webview.currentWebview().opener();
+				vueload();
+				window.addEventListener("setcfg", cmv.updatecfg);
+			});
+
+			function vueload() {
+				cmv = new Vue({
+					el: "#cfgmain",
+					data: {
+						cfg: self.cfg
+					},
+					watch: {
+						cfg: {
+							handler: function(val, oldval) {
+								var el = document.querySelector("#needcnv .str");
+								switch(val.needcnv) {
+									case 0:
+										el.style.transform = "rotateX(-90deg)";
+										el.style.webkitTransform = "rotateX(-90deg)";
+										break;
+									case 1:
+										el.style.transform = "rotateX(0)";
+										el.style.webkitTransform = "rotateX(0)";
+										break;
+									case 2:
+										el.style.transform = "rotateX(90deg)";
+										el.style.webkitTransform = "rotateX(90deg)";
+										break;
+								}
+							},
+							deep: true
+						}
+					},
+					methods: {
+						updatecfg: function(e) {
+							this.cfg = Object.assign({}, e.detail.cfg);
+						}
+					}
+				});
+			}
+
+			function updatecfg() {
+				mui.fire(mw, "setcfg", {
+					cfg: cmv.cfg
+				});
+				return true;
+			}
+
+			function switchme(id) {
+				cmv.cfg[id] = !(cmv.cfg[id]);
+			}
+
+            //TODO 添加输入提示
+			function inputme(id, parentid) {
+				if(typeof parentid == "undefined") {
+					mui.prompt('', cmv.cfg[id], '输入...', ['取消', '确认'], function(e) {
+						if(e.index && e.value != "")
+							cmv.cfg[id] = e.value;
+					}, 'div');
+				} else {
+					mui.prompt('', cmv.cfg[parentid][id], '输入...', ['取消', '确认'], function(e) {
+						if(e.index && e.value != "")
+							cmv.cfg[parentid][id] = e.value;
+					}, 'div');
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header id="hw" class="mui-bar mui-bar-nav">
+			<div class="mui-action-back mui-icon mui-icon-closeempty"></div>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div id="mw" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul id="cfgmain" class="mui-table-view">
+					<li id="needchpath" class="mui-table-view-cell switch" @tap="switchme('needchpath');">
+						选择文件后切换路径
+						<div class="mui-switch" :class="cfg.needchpath?'mui-active':''">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+					<li id="repath" class="mui-table-view-cell input" @tap="inputme('repath')">
+						选择文件后切换路径
+						<div class="ellipsis rtl" v-cloak>{{cfg.repath}}</div>
+					</li>
+					<li id="startchpath" class="mui-table-view-cell switch" @tap="switchme('startchpath');">
+						启动时切换路径
+						<div class="mui-switch" :class="cfg.startchpath?'mui-active':''">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+					<li id="cancelchpath" class="mui-table-view-cell switch" @tap="switchme('cancelchpath');">
+						确定/取消后切换路径
+						<div class="mui-switch" :class="cfg.cancelchpath?'mui-active':''">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+					<li id="needplay" class="mui-table-view-cell switch" @tap="switchme('needplay');">
+						选中后试听文件
+						<div class="mui-switch" :class="cfg.needplay?'mui-active':''">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+					<li id="needcnv" class="mui-table-view-cell switch" @tap="cfg.needcnv=++(cfg.needcnv)%3">
+						<div>是否尝试转码：</div>
+						<div class="b-box str">
+							<div class="b-face b-top" style="color: #00f;">不转码</div>
+							<div class="b-face b-front" style="color: #0f0;">尝试转码</div>
+							<div class="b-face b-bottom" style="color: #f00;">强制转码</div>
+						</div>
+					</li>
+					<li id="sortrule" class="mui-table-view-cell input" @tap="inputme('sortrule')">
+						文件/目录排序规则
+						<div class="ellipsis rtl" v-cloak>{{cfg.sortrule}}</div>
+					</li>
+					<li id="mindelay" class="mui-table-view-cell input numsel">
+						程序处理的最低间隔
+						<label style="font-size: 16px; margin-left: 36px" v-cloak>{{cfg.mindelay}}ms</label>
+						<div class="mui-input-row mui-input-range">
+							<input type="range" v-model="cfg.mindelay" min="200" max="5000" step="100">
+						</div>
+					</li>
+					<li id="regexopt" class="mui-table-view-cell input" @tap="inputme('regexopt')">
+						正则过滤规则
+						<div class="ellipsis rtl" v-cloak>{{cfg.regexopt}}</div>
+					</li>
+					<li id="namechkf" class="mui-table-view-cell input" @tap="inputme('f', 'namechk')">
+						替换用文件过滤规则(正则表达式)
+						<div class="ellipsis rtl" v-cloak>{{cfg.namechk.f}}</div>
+					</li>
+					<li id="namechktf" class="mui-table-view-cell input" @tap="inputme('tf', 'namechk')">
+						被替换文件过滤规则(正则表达式)
+						<div class="ellipsis rtl" v-cloak>{{cfg.namechk.tf}}</div>
+					</li>
+					<li id="namechkd" class="mui-table-view-cell input" @tap="inputme('d', 'namechk')">
+						替换用目录过滤规则(正则表达式)
+						<div class="ellipsis rtl" v-cloak>{{cfg.namechk.d}}</div>
+					</li>
+					<li id="namechktd" class="mui-table-view-cell input" @tap="inputme('td', 'namechk')">
+						被替换目录过滤规则(正则表达式)
+						<div class="ellipsis rtl" v-cloak>{{cfg.namechk.td}}</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

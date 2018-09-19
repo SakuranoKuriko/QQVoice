@@ -1,0 +1,64 @@
+
+{
+	"buildFiles" : [ "D:/AndroidProject/QQVoice/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target clean"
+	],
+	"libraries" : 
+	{
+		"ffmpeg-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "ffmpeg",
+			"buildType" : "debug",
+			"output" : "src/main/jniLibs/armeabi-v7a/libffmpeg.so",
+			"toolchain" : "1082347995"
+		},
+		"media-handle-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "media-handle",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target media-handle",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dmedia_handle_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include -I..\\..\\..\\..\\src\\main\\cpp\\silk  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/cpp/ffmpeg_cmd.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmedia-handle.so",
+			"toolchain" : "1082347995"
+		},
+		"silkenc-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "silkenc",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target silkenc",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkenc_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include -I..\\..\\..\\..\\src\\main\\cpp\\silk  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/cpp/SilkEncoder.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/debug/obj/arm64-v8a/libsilkenc.so",
+			"toolchain" : "1082347995"
+		}
+	},
+	"toolchains" : 
+	{
+		"1082347995" : 
+		{
+			"cCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

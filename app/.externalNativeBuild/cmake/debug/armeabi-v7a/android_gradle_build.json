@@ -1,0 +1,780 @@
+
+{
+	"buildFiles" : [ "D:/AndroidProject/QQVoice/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"ffmpeg-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "ffmpeg",
+			"buildType" : "debug",
+			"output" : "../../../../libs/armeabi-v7a/libffmpeg.so",
+			"toolchain" : "1082347995"
+		},
+		"ffmpegcmd-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "ffmpegcmd",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target ffmpegcmd",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dffmpegcmd_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/ffmpeg/cmdutils.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dffmpegcmd_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/ffmpeg/ffmpeg.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dffmpegcmd_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/ffmpeg/ffmpeg_filter.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dffmpegcmd_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/ffmpeg/ffmpeg_opt.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dffmpegcmd_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/ffmpeg_cmd.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libffmpegcmd.so",
+			"toolchain" : "1082347995"
+		},
+		"silkcodec-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "silkcodec",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target silkcodec",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/SilkCodec.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_A2NLSF.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_CNG.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_HP_variable_cutoff_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LBRR_reset.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LPC_inv_pred_gain.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LPC_stabilize.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LPC_synthesis_filter.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LPC_synthesis_order16.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LP_variable_cutoff.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LSF_cos_table.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LTP_analysis_filter_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_LTP_scale_ctrl_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_MA.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF2A.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF2A_stable.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_MSVQ_decode.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_MSVQ_encode_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_VQ_rate_distortion_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_VQ_sum_error_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_VQ_weights_laroia.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NLSF_stabilize.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NSQ.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_NSQ_del_dec.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_PLC.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_VAD.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_VQ_nearest_neighbor_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_allpass_int.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_ana_filt_bank_1.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_apply_sine_window.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_array_maxabs.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_autocorr.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_biquad.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_biquad_alt.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_burg_modified.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_bwexpander.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_bwexpander_32.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_code_signs.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_control_codec_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_corrMatrix_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_create_init_destroy.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_dec_API.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_core.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_frame.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_indices_v4.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_parameters.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_parameters_v4.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decode_pulses.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_decoder_set_fs.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_detect_SWB_input.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_enc_API.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_encode_frame_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_encode_parameters.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_encode_parameters_v4.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_encode_pulses.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_find_LPC_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_find_LTP_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_find_pitch_lags_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_find_pred_coefs_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_gain_quant.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_init_encoder_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_inner_prod_aligned.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_interpolate.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_k2a.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_k2a_Q16.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_lin2log.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_log2lin.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_lowpass_int.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_lowpass_short.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_noise_shape_analysis_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_pitch_analysis_core.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_pitch_est_tables.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_prefilter_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_process_NLSFs_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_process_gains_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_pulses_to_bytes.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_quant_LTP_gains_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_range_coder.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_regularize_correlations_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_1_2.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_1_2_coarse.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_1_2_coarsest.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_1_3.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_2_1_coarse.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_2_3.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_2_3_coarse.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_2_3_coarsest.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_2_3_rom.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_3_1.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_3_2.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_3_2_rom.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_3_4.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_resample_4_3.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_residual_energy16_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_residual_energy_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_scale_copy_vector16.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_scale_vector.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_schur.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_schur64.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_shell_coder.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_sigm_Q15.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_solve_LS_FIX.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_sort.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_sum_sqr_shift.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_LTP.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_NLSF_CB0_10.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_NLSF_CB0_16.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_NLSF_CB1_10.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_NLSF_CB1_16.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_gain.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_other.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_pitch_lag.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_pulses_per_block.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_sign.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkcodec_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\silk\\interface -I..\\..\\..\\..\\src\\main\\jni\\silk\\src -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/jni/silk/src/SKP_Silk_tables_type_offset.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libsilkcodec.so",
+			"toolchain" : "1082347995"
+		},
+		"silkcodecqq-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "silkcodecqq",
+			"buildType" : "debug",
+			"output" : "../../../../libs/armeabi-v7a/libcodecsilk.so",
+			"toolchain" : "1082347995"
+		}
+	},
+	"toolchains" : 
+	{
+		"1082347995" : 
+		{
+			"cCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

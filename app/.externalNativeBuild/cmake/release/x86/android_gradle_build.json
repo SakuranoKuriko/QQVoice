@@ -1,0 +1,64 @@
+
+{
+	"buildFiles" : [ "D:/AndroidProject/QQVoice/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\release\\x86 --target clean"
+	],
+	"libraries" : 
+	{
+		"ffmpeg-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "ffmpeg",
+			"buildType" : "release",
+			"output" : "src/main/jniLibs/armeabi-v7a/libffmpeg.so",
+			"toolchain" : "1082347995"
+		},
+		"media-handle-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "media-handle",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\release\\x86 --target media-handle",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dmedia_handle_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include -I..\\..\\..\\..\\src\\main\\cpp\\silk  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/cpp/ffmpeg_cmd.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/release/obj/x86/libmedia-handle.so",
+			"toolchain" : "1082347995"
+		},
+		"silkenc-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "silkenc",
+			"buildCommand" : "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\release\\x86 --target silkenc",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot -Dsilkenc_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include -I..\\..\\..\\..\\src\\main\\cpp\\silk  -isystem C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/AndroidProject/QQVoice/app/src/main/cpp/SilkEncoder.c",
+					"workingDirectory" : "D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "D:/AndroidProject/QQVoice/app/build/intermediates/cmake/release/obj/x86/libsilkenc.so",
+			"toolchain" : "1082347995"
+		}
+	},
+	"toolchains" : 
+	{
+		"1082347995" : 
+		{
+			"cCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/Kuriko/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

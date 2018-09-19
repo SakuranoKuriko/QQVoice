@@ -1,0 +1,24 @@
+{
+  "config.html": {
+    "href": "config.html",
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/common.css",
+      "css/config.css",
+      "js/mui.min.js",
+      "js/vue.js"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/common.css",
+      "css/index.css",
+      "js/vue.js"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "D:\\AndroidProject\\QQVoice\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "ffmpeg-Debug-arm64-v8a": {
+      "artifactName": "ffmpeg",
+      "abi": "arm64-v8a",
+      "output": "src\\main\\jniLibs\\armeabi-v7a\\libffmpeg.so"
+    },
+    "media-handle-Debug-arm64-v8a": {
+      "artifactName": "media-handle",
+      "buildCommand": "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target media-handle",
+      "abi": "arm64-v8a",
+      "output": "D:\\AndroidProject\\QQVoice\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmedia-handle.so"
+    },
+    "silkenc-Debug-arm64-v8a": {
+      "artifactName": "silkenc",
+      "buildCommand": "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target silkenc",
+      "abi": "arm64-v8a",
+      "output": "D:\\AndroidProject\\QQVoice\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libsilkenc.so"
+    }
+  }
+}

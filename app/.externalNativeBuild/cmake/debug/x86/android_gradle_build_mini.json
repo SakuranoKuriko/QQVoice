@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "D:\\AndroidProject\\QQVoice\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+  ],
+  "libraries": {
+    "silkenc-Debug-x86": {
+      "artifactName": "silkenc",
+      "buildCommand": "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\x86 --target silkenc",
+      "abi": "x86",
+      "output": "D:\\AndroidProject\\QQVoice\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libsilkenc.so"
+    },
+    "ffmpeg-Debug-x86": {
+      "artifactName": "ffmpeg",
+      "abi": "x86",
+      "output": "src\\main\\jniLibs\\armeabi-v7a\\libffmpeg.so"
+    },
+    "media-handle-Debug-x86": {
+      "artifactName": "media-handle",
+      "buildCommand": "C:\\Users\\Kuriko\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProject\\QQVoice\\app\\.externalNativeBuild\\cmake\\debug\\x86 --target media-handle",
+      "abi": "x86",
+      "output": "D:\\AndroidProject\\QQVoice\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libmedia-handle.so"
+    }
+  }
+}

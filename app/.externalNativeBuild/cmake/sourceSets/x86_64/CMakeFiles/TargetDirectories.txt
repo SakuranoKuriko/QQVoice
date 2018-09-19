@@ -1,0 +1,4 @@
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/x86_64/CMakeFiles/silkenc.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/x86_64/CMakeFiles/media-handle.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/x86_64/CMakeFiles/edit_cache.dir
+D:/AndroidProject/QQVoice/app/.externalNativeBuild/cmake/sourceSets/x86_64/CMakeFiles/rebuild_cache.dir
