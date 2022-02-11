@@ -37,15 +37,15 @@ android {
     buildTypes {
         all {
             signingConfig =
-                if (releaseStoreFile.isNullOrEmpty()) signingConfigs.getByName("debug") else signingConfigs.getByName(
-                    "config"
-                )
+                if (releaseStoreFile.isNullOrEmpty())
+                    signingConfigs.getByName("debug")
+                else signingConfigs.getByName("config")
         }
-        release {
-            isMinifyEnabled = true
-            isShrinkResources = true
-            proguardFiles("proguard-rules.pro")
-        }
+        // release {
+        //     isMinifyEnabled = true
+        //     isShrinkResources = true
+        //     proguardFiles("proguard-rules.pro")
+        // }
     }
 
     compileOptions {
