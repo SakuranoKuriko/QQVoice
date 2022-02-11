@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">QQVoice</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="msg_confirmConvert2QQVoice">Do you want to send it as QQ voice?</string>
+    <string name="msg_transcodingFailed">Transcoding failed</string>
+    <string name="msg_showDialogFailed">Failed to show dialog box</string>
+    <string name="msg_hookSendButtonFailed">Hook send button failed</string>
+    <string name="msg_sendFailed">Sending failed</string>
+</resources>

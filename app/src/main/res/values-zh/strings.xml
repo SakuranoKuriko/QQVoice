@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_yes">是</string>
+    <string name="msg_no">否</string>
+    <string name="msg_ok">确定</string>
+    <string name="msg_cancel">取消</string>
+    <string name="msg_confirmConvert2QQVoice">是否以QQ语音发送？</string>
+    <string name="msg_transcodingFailed">转码失败</string>
+    <string name="msg_showDialogFailed">显示对话框失败</string>
+    <string name="msg_hookSendButtonFailed">Hook发送按钮失败</string>
+    <string name="msg_sendFailed">发送失败</string>
+</resources>

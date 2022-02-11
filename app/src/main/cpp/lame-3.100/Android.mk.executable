@@ -1,0 +1,47 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    	:= mp3lame
+LOCAL_SRC_FILES 	:= \
+	src/bitstream.c \
+	src/encoder.c \
+	src/fft.c \
+	src/gain_analysis.c \
+	src/id3tag.c \
+	src/lame.c \
+	src/mpglib_interface.c \
+	src/newmdct.c \
+	src/presets.c \
+	src/psymodel.c \
+	src/quantize.c \
+	src/quantize_pvt.c \
+	src/reservoir.c \
+	src/set_get.c \
+	src/tables.c \
+	src/takehiro.c \
+	src/util.c \
+	src/vbrquantize.c \
+	src/VbrTag.c \
+	src/version.c \
+	mpglib/common.c \
+	mpglib/dct64_i386.c \
+	mpglib/decode_i386.c \
+	mpglib/interface.c \
+	mpglib/layer1.c \
+	mpglib/layer2.c \
+	mpglib/layer3.c \
+	mpglib/tabinit.c \
+	frontend/amiga_mpega.c \
+	frontend/brhist.c \
+	frontend/console.c \
+	frontend/get_audio.c \
+	frontend/lametime.c \
+	frontend/lame_main.c \
+	frontend/main.c \
+	frontend/parse.c \
+	frontend/timestatus.c
+LOCAL_C_INCLUDES 	:= src mpglib frontend $(LOCAL_PATH)/../include
+LOCAL_CFLAGS += -DSTDC_HEADERS -DHAVE_MPGLIB
+
+include $(BUILD_EXECUTABLE)
