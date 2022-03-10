@@ -131,6 +131,7 @@ object ShareHook {
             }
             XLog.d("share start")
             sharingInfo = SharingInfo(ext) { resolver.openInputStream(uri)!! }
+            Utils.toast("Initialized")
             return true
         } else return false
     }
